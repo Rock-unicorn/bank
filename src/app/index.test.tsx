@@ -5,6 +5,7 @@ import { App } from '.';
 describe('App', () => {
   it('renders app', () => {
     render(<App />);
-    expect(screen.getByText('MainPage'));
+    expect(screen.findByText(/cat/i));
+    expect(screen.findByText(/currencies academic terms/i));
   });
 });

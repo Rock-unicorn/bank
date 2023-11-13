@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto 21px 29px;
+  @media (max-width: 575px) {
+    margin: 0 10px 21px 11px;
+    align-items: center;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  gap: 10px;
+  max-width: 262px;
+  height: var(--header-height);
+  align-items: center;
+  margin: 0;
+}
+
+.title {
+  font-size: var(--fs-large);
+}
+
+.description {
+  font-size: var(--fs-normal);
+  margin: 0;
+}
+
+.select {
+  width: 181px;
+  height: 43px;
+}
