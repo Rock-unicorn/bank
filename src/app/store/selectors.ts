@@ -1,3 +1,3 @@
-// import { RootState } from './store';
+import { RootState } from './store';
 
-// selectors
+export const currencySelector = (state: RootState) => state.currencyReduser;

@@ -1,0 +1,22 @@
+.headerContainer {
+  display: flex;
+  @media (max-width: 575px) {
+    justify-content: center;
+  }
+}
+
+.kitten {
+  width: 225px;
+  height: 341px;
+  margin-bottom: calc((var(--layout-height) - 75px) * -1);
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
+
+.loader {
+  margin-right: auto;
+  @media (max-width: 575px) {
+    margin: 0;
+  }
+}
