@@ -13,7 +13,7 @@ import { setCurrency } from '../model/CurrencySlice';
 import { Option, customStyles, customTheme } from './Select.theme';
 import { CurrencyEnterProps } from '../model/types';
 
-const DropdownIndicator: React.FC<DropdownIndicatorProps> = (props) => {
+const DropdownIndicator: React.FC<DropdownIndicatorProps<Option>> = (props) => {
   return (
     <components.DropdownIndicator {...props}>
       <ChevronDown />
