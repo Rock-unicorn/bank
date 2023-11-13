@@ -23,9 +23,11 @@ const DropdownIndicator: React.FC<DropdownIndicatorProps<Option>> = (props) => {
 
 export function CurrencyEnter({ currencies }: CurrencyEnterProps) {
   const dispatch = useAppDispatch();
+
   const handleChange = (currentCurrency: SingleValue<Option>) => {
     dispatch(setCurrency(currentCurrency?.value));
   };
+
   const options: readonly Option[] = useMemo(
     () =>
       currencies.map((currency) => ({
@@ -34,6 +36,7 @@ export function CurrencyEnter({ currencies }: CurrencyEnterProps) {
       })),
     [currencies]
   );
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.titleContainer}>

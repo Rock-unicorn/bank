@@ -1,6 +1,8 @@
 .layout {
-    max-width: 679px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  max-width: 679px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
 }

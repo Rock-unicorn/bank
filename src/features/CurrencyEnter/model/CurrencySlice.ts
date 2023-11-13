@@ -4,6 +4,7 @@ import { endpoints } from '../api/CurrencyController';
 export interface StateType {
   name: string;
 }
+
 const initialState: StateType = {
   name: '',
 };

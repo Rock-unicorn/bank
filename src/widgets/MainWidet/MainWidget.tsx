@@ -7,12 +7,12 @@ import styles from './MainWidgets.module.scss';
 
 export function MainWidget() {
   const { data: currencies, isSuccess } = useGetAllCurrenciesQuery();
+
   return (
     <>
       <div className={styles.headerContainer}>
-        {isSuccess ? (
-          <CurrencyEnter currencies={currencies} />
-        ) : (
+        {isSuccess && <CurrencyEnter currencies={currencies} />}{' '}
+        {!isSuccess && (
           <Rings
             color="black"
             width={200}
